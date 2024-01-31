@@ -2,7 +2,7 @@
 
 * Студент: [Михаил Курбатов](https://up.htmlacademy.ru/htmlcss/39/user/244136).
 * Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
-
+* Проект: [Мой проект Седона](https://kelluin.github.io/244136-sedona-39/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
