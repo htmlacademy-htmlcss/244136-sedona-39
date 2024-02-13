@@ -18,16 +18,32 @@
   display: none;
 }
 
+ul {
+  list-style-type:none;
+  padding: 0;
+}
 
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
   color: #000000;
   margin: 0;
   padding: 0;
   width: 100%;
+}
+
+div.body-box {
+  background-color: #ffffff;
+  margin: auto;
+  width: 1200px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navigation,
+.navigation-list {
+  display: flex;
 }
 
 .navigation-link {
@@ -66,29 +82,58 @@ body {
   background-image: url("../images/index/hero.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 1200px;
   height: 485px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .welcome-box {
-  margin-left: auto;
-  margin-right: auto;
   width: 458px;
   height: 352px;
-  padding-top: 51px;
+}
+
+.advantage-title {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  height: 261px;
+  text-align: center;
+}
+
+.advantage-desc {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 246px;
+}
+
+.advantage-desc .title {
+  margin: 0 0 20px 0;
 }
 
 .title {
+  margin: 0 0 25px 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .title-text {
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+}
+
+.advantage-text {
+  margin-bottom: 0;
+  margin-top: 30px;
 }
 
 .advantage-text:not(.city p, .bridge p) {
@@ -97,6 +142,7 @@ body {
 
 .advantage-item {
   background-color: #83B3D31F;
+  float: right;
 }
 
 .box {
@@ -114,10 +160,32 @@ body {
 }
 
 .advantage-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   width: 230px;
   height: 160px;
+}
 
+.advantage-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 230px;
+  height: 181px;
+}
+
+.advantage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 385px;
 }
 
 .advantage-image-city {
@@ -138,14 +206,37 @@ body {
 
 .city,
 .bridge {
-  width: 230px;
-  height: 181px;
   color: #ffffff;
-
 }
 
 .advantage-subtitle {
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  text-transform: uppercase;
+}
+
+.holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  text-align: center;
+  width: 230px;
+  height: 223px;
+}
+
+.souvenirs {
+  background-image: url("../images/index/souvenirs.svg");
+
+}
+
+.food {
+  background-image: url("../images/index/food.svg")
+}
+
+.housing {
+  background-image: url("../images/index/housing.svg")
 }
