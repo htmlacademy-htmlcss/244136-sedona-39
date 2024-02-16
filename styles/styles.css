@@ -18,11 +18,6 @@
   display: none;
 }
 
-ul {
-  list-style-type:none;
-  padding: 0;
-}
-
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -64,11 +59,8 @@ div.body-box {
   color: #ffffff;
 }
 
-.navigation-button {
+.small {
   font-family: "PT Sans", sans-serif;
-  height: 36px;
-  width: 160px;
-  background-color: #756157;
   border-radius: 4px;
   color: #ffffff;
   font-size: 16px;
@@ -77,6 +69,62 @@ div.body-box {
   text-transform: uppercase;
   border: 0;
 }
+
+.medium {
+  font-family: "PT Sans", sans-serif;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.navigation-button,
+.search-button,
+.button-detail {
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.subscribe-button,
+.apply,
+.button-result {
+  background-color: #82B3D3;
+}
+
+.navigation-button {
+  width: 160px;
+  height: 36px;
+}
+
+.search-button {
+  width: 376px;
+  height: 52px;
+}
+
+.subscribe-button {
+  border-radius: 0 4px 4px 0;
+  width: 232px;
+  height: 52px;
+}
+
+.apply,
+.reset {
+  width: 191px;
+  height: 36px;
+}
+
+.button-result {
+  width: 140px;
+  height: 36px;
+}
+
+.result-list a {
+  padding: 8px 26px 8px 26px;
+}
+
 
 .hero {
   background-image: url("../images/index/hero.jpg");
@@ -93,6 +141,11 @@ div.body-box {
 .welcome-box {
   width: 458px;
   height: 352px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
 }
 
 .advantage-title {
@@ -142,7 +195,7 @@ div.body-box {
 
 .advantage-item {
   background-color: #83B3D31F;
-  float: right;
+  float: left;
 }
 
 .box {
@@ -230,7 +283,6 @@ div.body-box {
 
 .souvenirs {
   background-image: url("../images/index/souvenirs.svg");
-
 }
 
 .food {
@@ -239,4 +291,39 @@ div.body-box {
 
 .housing {
   background-image: url("../images/index/housing.svg")
+}
+
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 402px;
+}
+
+.subscribe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 415px;
+  background-image: url("../images/index/Subscribe.jpg");
+}
+
+.subscribe,
+.subscribe p {
+  color: #ffffff;
+}
+
+.form-mail {
+  border: 0;
+  border-radius: 4px 0 0 4px;
+  width: 452px;
+  height: 52px;
+}
+
+.vk {
+  background-image: url("../images/vk.svg");
 }
