@@ -12,7 +12,7 @@
       <!---------------- блок header --------------->
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a href="index.html"><img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" class="logo"></a>
+          <a href="index.html" class="logo"><img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны"></a>
           <!--  блок навигации по страницам сайта    -->
           <ul class="navigation-list list">
             <li class="navigation-item active">
@@ -26,22 +26,20 @@
             </li>
           </ul>
           <!-- блок пользовательской навигации -->
-          <ul class="navigation-list list">
-            <li class="navigation-item search-logo">
-              <a class="navigation-link" href="#">
-                <img src="images/search.svg" alt="Поиск" width="20" height="20">
+          <ul class="navigation-user list">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link search-logo" href="#">
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item favorites-logo">
-              <a class="navigation-link" href="#">
-                <img src="images/favorites.svg" alt="Избранное" width="20" height="20">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link favorites-logo" href="#">
+                <span class="visually-hidden">Избранное</span>
                 <span class="amount">12</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <button class="navigation-button small" type="button">Хочу сюда!</button>
-            </li>
           </ul>
+          <button class="navigation-button small" type="button">Хочу сюда!</button>
         </nav>
       </header>
 
