@@ -12,38 +12,36 @@
       <!---------------- блок header --------------->
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a href="index.html"><img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" class="logo"></a>
+          <a href="index.html" class="logo"><img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны"></a>
           <!--  блок навигации по страницам сайта    -->
           <ul class="navigation-list list">
-            <li class="navigation-item">
+            <li class="navigation-item active">
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
-            <li class="navigation-item active">
+            <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <!-- блок пользовательской навигации -->
-          <ul class="navigation-list navigation-user list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
+          <ul class="navigation-user list">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link search-logo" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link favorites-logo" href="#">
                 <span class="visually-hidden">Избранное</span>
+                <span class="amount">12</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <button class="navigation-button small" type="button">Хочу сюда!</button>
-            </li>
           </ul>
+          <button class="navigation-button small" type="button">Хочу сюда!</button>
         </nav>
       </header>
-
       <main class="main-catalog" data-test="main">
         <section class="catalog-filter" data-test="filter">
           <h1 class="catalog-title">Гостиницы Седоны</h1>
@@ -152,10 +150,10 @@
             <ul class="result-list list">
               <li class="result-item">
                 <img src="images/catalog/amara_resort.jpg" width="300" height="212"
-                  alt="Вид на звездное небо в ресщелине гор">
+                  alt="Вид на звездное небо в ресщелине гор" class="result-image">
                 <h3>Amara Resort & Spa</h3>
-                <p>Гостиница</p>
-                <p>От 4000 ₽</p>
+                <p class="result-type">Гостиница</p>
+                <p class="price">От 4000 ₽</p>
                 <a class="button-detail small" href="#">Подробнее</a>
                 <button class="button-result small" type="button">в избранное</button>
                 <div class="stars"></div>
@@ -164,32 +162,35 @@
               </li>
               <li class="result-item">
                 <img src="images/catalog/villas_at_poco_diablo.jpg" width="300" height="212"
-                  alt="Вид на гору с радугой в пасмурную погоду">
+                  alt="Вид на гору с радугой в пасмурную погоду" class="result-image">
                 <h3>Villas at Poco Diablo</h3>
-                <p>Гостиница</p>
-                <p>От 5000 ₽</p>
+                <p class="result-type">Гостиница</p>
+                <p class="price">От 5000 ₽</p>
                 <a class="button-detail small" href="#">Подробнее</a>
-                <button class="button-result small result-activ" type="button">в избранном</button>
+                <button class="button-result small result-active" type="button">в избранном</button>
+                <div class="stars"></div>
                 <p class="visually-hidden">Отель 4 звезды</p>
                 <p class="rating">Рейтинг: 9,2</p>
               </li>
               <li class="result-item">
-                <img src="images/catalog/desrt_quail_inn.jpg" width="300" height="212" alt="Гора на фоне голубого неба">
+                <img src="images/catalog/desrt_quail_inn.jpg" width="300" height="212" alt="Гора на фоне голубого неба" class="result-image">
                 <h3>Desert Quail Inn</h3>
-                <p>Гостиница</p>
-                <p>От 2500 ₽</p>
+                <p class="result-type">Гостиница</p>
+                <p class="price">От 2500 ₽</p>
                 <a class="button-detail small" href="#">Подробнее</a>
                 <button class="button-result small" type="button">в избранное</button>
+                <div class="stars"></div>
                 <p class="visually-hidden">Отель 3 звезды</p>
                 <p class="rating">Рейтинг: 6,9</p>
               </li>
               <li class="result-item">
-                <img src="images/catalog/greentree_inn.jpg" width="300" height="212" alt="Гора на фоне звездного неба">
+                <img src="images/catalog/greentree_inn.jpg" width="300" height="212" alt="Гора на фоне звездного неба" class="result-image">
                 <h3>GreenTree Inn</h3>
-                <p>Гостиница</p>
-                <p>От 1500 ₽</p>
+                <p class="result-type">Гостиница</p>
+                <p class="price">От 1500 ₽</p>
                 <a class="button-detail small" href="#">Подробнее</a>
                 <button class="button-result small" type="button">в избранное</button>
+                <div class="stars"></div>
                 <p class="visually-hidden">Отель 2 звезды</p>
                 <p class="rating">Рейтинг: 5,0</p>
               </li>
