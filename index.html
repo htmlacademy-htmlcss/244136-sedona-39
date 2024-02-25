@@ -44,12 +44,12 @@
       </header>
 
       <!-- блок основного содержимого -->
-      <main class="main-index" data-test="main">
+      <main class="main-index main-container" data-test="main">
         <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
           <img class="welcome-box" src="images/index/welcome.svg" width="458" height="352"
             alt="Добро пожаловать в великолепную Седону, потому что Большой Каньон — отстой">
-        </section>
+          </section>
         <section class="advantage" data-test="advantages">
           <div class="advantage-title">
             <h2 class="title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
@@ -115,21 +115,23 @@
           </ul>
         </section>
         <article class="hotel-search" data-test="search">
-          <h2 class="title">Заинтересовались?</h2>
-          <p class="title-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
+          <h2 class="search-title title">Заинтересовались?</h2>
+          <p class="search-text title-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
             Седоне</p>
           <form class="search-form" action="https://echo.htmlacademy.ru/">
             <button class="search-button medium" type="button">поиск гостинницы в седоне</button>
           </form>
         </article>
         <article class="subscribe" data-test="subscribe">
-          <h2 class="title">Подпишитесь на рассылку</h2>
-          <p class="title-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-text title-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="form-mail" type="text" id="subscribe-form-mail" name="subscribe-form-mail"
               placeholder="Ваш e-mail">
             <button class="subscribe-button medium" type="submit">Подписаться</button>
           </form>
+
         </article>
       </main>
 
