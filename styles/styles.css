@@ -180,6 +180,8 @@ body {
 .reset {
   width: 191px;
   height: 36px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .reset {
@@ -523,7 +525,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .catalog-filter-list {
@@ -599,11 +601,17 @@ body {
   padding: 0;
 }
 
+.slider {
+
+  margin: 0;
+}
+
 .buttons {
   display: flex;
   flex-direction: column;
   margin-top: 56px;
   gap: 32px;
+  height: 104px;
 }
 
 .catalog-products {
