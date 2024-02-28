@@ -31,7 +31,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  min-height: 100%;
+  height: 100%;
 }
 
 .body-box {
@@ -39,6 +39,13 @@ body {
   margin: auto;
   width: 1200px;
   box-shadow: 0 0 15px 0 #00000033;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page-header {
+  z-index: 1;
 }
 
 .navigation {
@@ -62,6 +69,8 @@ body {
   width: 400px;
   list-style: none;
   margin-right: auto;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .navigation-user {
@@ -253,10 +262,14 @@ body {
   justify-content: center;
   width: 100%;
   min-height: 246px;
+  padding-left: 348px;
+  padding-right: 348px;
+  box-sizing: border-box;
 }
 
 .advantage-desc .title {
   margin: 0 0 20px 0;
+  text-align: center;
 }
 
 .title {
@@ -331,6 +344,9 @@ body {
   justify-content: center;
   width: 400px;
   height: 385px;
+  padding-left: 85px;
+  padding-right: 85px;
+  box-sizing: border-box;
 }
 
 .advantage-image-city {
@@ -348,20 +364,48 @@ body {
   color: #ffffff;
 }
 
+.line,
+.first-line,
+.last-line {
+  margin: 0;
+}
+
 .advantage-subtitle {
-  margin: 30px 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
 }
 
+.first-line::after,
+.last-line::after {
+  content: "";
+  border: 2px solid #FFFFFF4D;
+  bottom: -30px;
+  width: 60px;
+  margin: auto;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.line::after {
+  content: "";
+  border: 2px solid #0000004D;
+  bottom: -30px;
+  width: 60px;
+  margin: auto;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
 .holder {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-position: 50% 81px;
+  justify-content: flex-end;
   text-align: center;
 
 }
@@ -373,9 +417,6 @@ body {
   background-image: url("../images/index/souvenirs.svg");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .food {
@@ -385,9 +426,6 @@ body {
   background-image: url("../images/index/food.svg");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 
 }
 
@@ -398,9 +436,6 @@ body {
   background-image: url("../images/index/housing.svg");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .hotel-search {
@@ -426,7 +461,7 @@ body {
   padding: 50px;
   max-width: 100%;
   min-height: 315px;
-  background-image: url("../images/index/Subscribe.jpg");
+  background-image: url("../images/index/subscribe.jpg");
   background-repeat: no-repeat;
   background-color: #040056;
 }
@@ -475,7 +510,7 @@ body {
 }
 
 .catalog-filter {
-  background-image: url("../images/catalog/Filter.jpg");
+  background-image: url("../images/catalog/filter.jpg");
   background-color: #7f0505;
   background-repeat: no-repeat;
   color: #ffffff;
