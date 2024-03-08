@@ -61,20 +61,20 @@
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list list">
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Бассейн" checked>
+                  <label class="control custom-checkbox">
+                    <input class="checkbox" type="checkbox" name="pool" checked>
                     <span>Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Парковка" checked>
+                  <label class="control custom-checkbox">
+                    <input class="control-input" type="checkbox" name="parking" checked>
                     <span>Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Wi-Fi">
+                  <label class="control custom-checkbox">
+                    <input class="control-input" type="checkbox" name="wi-fi">
                     <span>Wi-Fi</span>
                   </label>
                 </li>
@@ -109,8 +109,14 @@
             <fieldset class="value">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="range">
-                <input class="value-min" type="text" name="value-min" placeholder="0">
-                <input class="value-max" type="text" name="value-max" placeholder="9000">
+                <label class="min">
+                  <input class="value-min value-range" type="text" name="value-min" placeholder="0">
+                  <span>от</span>
+                </label>
+                <label class="max">
+                  <input class="value-max value-range" type="text" name="value-max" placeholder="9000">
+                  <span>до</span>
+                </label>
               </div>
               <label class="value-slider">
                 <input class="slider" type="range" min="0" max="10000" value="0">
@@ -173,7 +179,8 @@
                 <p class="rating">Рейтинг: 9,2</p>
               </li>
               <li class="result-item">
-                <img src="images/catalog/desrt_quail_inn.jpg" width="300" height="212" alt="Гора на фоне голубого неба" class="result-image">
+                <img src="images/catalog/desrt_quail_inn.jpg" width="300" height="212" alt="Гора на фоне голубого неба"
+                  class="result-image">
                 <h3>Desert Quail Inn</h3>
                 <p class="result-type">Гостиница</p>
                 <p class="price">От 2500 ₽</p>
@@ -184,7 +191,8 @@
                 <p class="rating">Рейтинг: 6,9</p>
               </li>
               <li class="result-item">
-                <img src="images/catalog/greentree_inn.jpg" width="300" height="212" alt="Гора на фоне звездного неба" class="result-image">
+                <img src="images/catalog/greentree_inn.jpg" width="300" height="212" alt="Гора на фоне звездного неба"
+                  class="result-image">
                 <h3>GreenTree Inn</h3>
                 <p class="result-type">Гостиница</p>
                 <p class="price">От 1500 ₽</p>
@@ -220,7 +228,7 @@
         </section>
         <article class="subscribe subscribe-catalog" data-test="subscribe">
           <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-text title-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-text title-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="form-mail" type="text" id="subscribe-form-mail" name="subscribe-form-mail"
               placeholder="Ваш e-mail">
