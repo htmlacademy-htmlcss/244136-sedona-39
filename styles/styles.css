@@ -639,27 +639,27 @@ body {
   margin-bottom: 36px;
 }
 
-/* стилизация чекбоксов */
+/* стилизация чекбоксов и радио кнопок */
 
 .control {
   display: flex;
 }
 
-/* скрыть чекбокс по умолчанию */
-.custom-checkbox>input {
+/* скрыть инпут по умолчанию */
+.custom-checkbox>input,
+.custom-radio>input {
   position: absolute;
   z-index: -10;
   opacity: 0;
   margin: 0;
 }
 
-/* для элемента label, связанного с .custom-checkbox */
-.custom-checkbox>span {
-  display: inline-flex;
+.control>span {
+  display: flex;
   align-items: center;
 }
 
-/* создание в label псевдоэлемента before со следующими стилями */
+/* создание псевдоэлемента before*/
 .custom-checkbox>span::before {
   content: '';
   display: inline-block;
@@ -673,29 +673,54 @@ body {
   box-sizing: border-box;
 }
 
-/* стили для чекбокса, находящегося в фокусе */
-.custom-checkbox>input:focus+span::before {
+.custom-radio>span::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* стили для инпута, находящегося в фокусе */
+.custom-checkbox>input:focus+span::before,
+.custom-radio>input:focus+span::before {
   border-width: 3px;
   border-color: #83B3D3;
   border-style: solid;
 }
 
-/* стили для чекбокса, находящегося в состоянии checked */
+/* стили для инпута, находящегося в состоянии checked */
 .custom-checkbox>input:checked+span::before {
   border-color: #83B3D3;
   background-color: #ffffff;
   background-image: url("../images/catalog/checkbox.svg");
+
 }
 
-/* стили для чекбокса, при наведении */
+.custom-radio>input:checked+span::before {
+  border-color: #83B3D3;
+  background-color: #ffffff;
+  background-image: url("../images/catalog/radio.svg");
+}
+
+/* стили для инпута, при наведении */
 .custom-checkbox>input:hover+span::before,
-.custom-checkbox>span:hover {
+.custom-checkbox>span:hover,
+.custom-radio>input:hover+span::before,
+.custom-radio>span:hover {
   opacity: 60%;
 }
 
 /* стили при нажатии на чекбокс */
 .custom-checkbox>input:active+span::before,
-.custom-checkbox>span:active {
+.custom-checkbox>span:active,
+.custom-radio>input:hover+span::before,
+.custom-radio>span:hover {
   opacity: 30%;
 }
 
