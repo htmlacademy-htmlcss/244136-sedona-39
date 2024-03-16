@@ -1522,15 +1522,55 @@ body {
 }
 
 .search-form {
+  /*display: grid;
+  grid-template-columns: 577px;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+      "arrival"
+      "departure"
+      "adults"
+      "children";
+  row-gap: 48px;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.arrival-grid {
+  min-height: 73px;
   display: grid;
-  grid-template-columns: min(137px) 198px auto auto;
-  grid-template-rows: min-content minmax(40px, auto) min-content minmax(40px, auto) auto auto;
+  grid-template-columns: 137px 440px;
+  align-items: center;
+  align-content: start;
   row-gap: 4px;
+  margin-bottom: 23px;
+}
+
+.departure-grid {
+  min-height: 73px;
+  display: grid;
+  grid-template-columns: 137px 440px;
+  align-items: center;
+  align-content: start;
+  row-gap: 4px;
+  margin-bottom: 23px;
+}
+
+.adults-grid {
+  display: grid;
+  grid-template-columns: 97px 150px;
   align-items: center;
 }
 
+.children-grid {
+  display: grid;
+  grid-template-columns: 102px 140px;
+  align-items: center;
+}
+
+
 .arrival-form {
-  grid-column: span 3;
   padding-left: 20px;
   padding-right: 20px;
   font-family: "PT Sans", sans-serif;
@@ -1542,7 +1582,6 @@ body {
 }
 
 .departure-form {
-  grid-column: span 3;
   padding-left: 20px;
   padding-right: 20px;
   font-family: "PT Sans", sans-serif;
@@ -1557,33 +1596,8 @@ body {
   color: black;
 }
 
-.arrival {
-  position: relative;
-}
-
-/* тест с заглушкой */
-.cap-arr {
-  grid-column: 1/-1;
-  grid-row: 2/3;
-  color: transparent;
-  z-index: -5;
-  width: 1px;
-  height: 1px;
-}
-
-.cap-dep {
-  grid-column: 1/-1;
-  grid-row: 4/5;
-  color: transparent;
-  z-index: -5;
-  width: 1px;
-  height: 1px;
-}
-/* ---- */
-
 .date-error {
-  grid-row: 2/3;
-  grid-column: 2/-1;
+  grid-column: 2;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1591,15 +1605,12 @@ body {
   top: calc(100% + 16px);
   left: 157px;
   color: rgba(255, 87, 87, 1);
-  margin-bottom: auto;
+  width: 400px;
   padding: 0 20px;
 }
 
-.departure {
-  position: relative;
-}
-
 .notice {
+  grid-column: 2;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1607,9 +1618,7 @@ body {
   top: calc(100% + 16px);
   left: 157px;
   color: rgba(51, 51, 51, 1);
-  grid-row: 4/5;
-  grid-column: 2/-1;
-  margin-bottom: auto;
+  width: 400px;
   padding: 0 20px;
 }
 
@@ -1624,14 +1633,12 @@ body {
 .children-form {
   width: 110px;
   height: 48px;
-  justify-self: end;
   box-sizing: border-box;
 }
 
 .adults-form {
   width: 110px;
   height: 48px;
-  justify-self: start;
   box-sizing: border-box;
 }
 
@@ -1651,10 +1658,6 @@ body {
   text-align: center;
 }
 
-.children {
-  position: relative;
-}
-
 .search-button-modal {
   grid-column: span 4;
   width: 100%;
@@ -1668,14 +1671,13 @@ body {
   line-height: 24px;
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
-  margin-top: 44px;
+  margin-top: 48px;
 }
 
 .modal-form {
   background-color: rgba(242, 242, 242, 1);
   border: none;
   border-radius: 4px;
-
 }
 
 .spin {
@@ -1684,7 +1686,8 @@ body {
   margin: 0;
 }
 
-.child-spin {
+.child-spin,
+.adult-spin {
   justify-self: end;
 }
 
