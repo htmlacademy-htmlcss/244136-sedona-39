@@ -11,7 +11,7 @@
 
   <body>
     <div class="body-box">
-      <!---------------- блок header --------------->
+      <!--------------- блок header --------------->
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <a href="index.html" class="logo"><img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны"></a>
@@ -145,7 +145,7 @@
         </article>
       </main>
 
-      <!---------  блок footer-------------->
+      <!--------  блок footer-------------->
       <footer class="page-footer" data-test="footer">
         <ul class="social list">
           <li class="social-item">
@@ -191,7 +191,7 @@
     </div>
 
     <!--  модальное окно -->
-    <div class="modal-container modal-container-clos">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -206,14 +206,14 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="arrival-grid">
               <label class="field arrival" for="arrival">Дата Заезда:</label>
-              <input class="arrival-form modal-form" type="datetime" id="arrival" name="arrival"
-                placeholder="27 апреля 2020">
+              <input class="arrival-form modal-form" type="text" id="arrival" name="arrival"
+                placeholder="Укажите дату" required>
               <strong class="date-error">Мы не можем отправить вас в прошлое.</strong>
             </div>
             <div class="departure-grid">
               <label class="field departure" for="departure">Дата Выезда:</label>
-              <input class="departure-form modal-form" type="datetime" id="departure" name="departure"
-                placeholder="1 сентября 2023">
+              <input class="departure-form modal-form" type="text" id="departure" name="departure"
+                placeholder="Укажите дату" required>
               <strong class="notice">На эти даты есть свободные номера. Пока есть.</strong>
             </div>
             <div class="adults-grid">
@@ -224,7 +224,7 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" />
                   </svg>
                 </button>
-                <input class="adults-form modal-form" type="number" id="adults" name="adults" value="2">
+                <input class="adults-form modal-form" type="number" id="adults" name="adults" value="2" required>
                 <button class="plus" type="button">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" />
@@ -252,7 +252,7 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" />
                   </svg>
                 </button>
-                <input class="children-form modal-form" type="number" id="children" name="children" value="2">
+                <input class="children-form modal-form" type="number" id="children" name="children" value="2" required>
                 <button class="plus" type="button">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" />

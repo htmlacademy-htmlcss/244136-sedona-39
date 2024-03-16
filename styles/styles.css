@@ -1127,7 +1127,7 @@ body {
 .result-item {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 212px minmax(28px) 21px 36px 37px;
+  grid-template-rows: 212px minmax(28px, auto) minmax(21px, auto) 36px 37px;
   grid-auto-flow: row;
   width: 340px;
   min-height: 438px;
@@ -1522,15 +1522,6 @@ body {
 }
 
 .search-form {
-  /*display: grid;
-  grid-template-columns: 577px;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-      "arrival"
-      "departure"
-      "adults"
-      "children";
-  row-gap: 48px;*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1578,7 +1569,9 @@ body {
   font-weight: 700;
   line-height: 24px;
   color: rgb(0, 0, 0);
-  position: relative;
+  background-image: url("../images/calendar.svg");
+  background-repeat: no-repeat;
+  background-position:  calc(100% - 20px);
 }
 
 .departure-form {
@@ -1589,11 +1582,15 @@ body {
   font-weight: 700;
   line-height: 24px;
   color: rgb(0, 0, 0);
+  background-image: url("../images/calendar.svg");
+  background-repeat: no-repeat;
+  background-position:  calc(100% - 20px);
 }
 
 .arrival-form::placeholder,
 .departure-form::placeholder {
   color: black;
+  opacity: 60%;
 }
 
 .date-error {
@@ -1674,11 +1671,29 @@ body {
   margin-top: 48px;
 }
 
+.search-button-modal:hover,
+.search-button-modal:focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.search-button-modal:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(104, 162, 202, 1);
+}
+
 .modal-form {
   background-color: rgba(242, 242, 242, 1);
   border: none;
   border-radius: 4px;
 }
+
+.arrival-form:hover,
+.arrival-form:focus,
+.departure-form:hover,
+.departure-form:focus {
+  background-color: rgba(230, 230, 230, 1);
+}
+
 
 .spin {
   position: relative;
