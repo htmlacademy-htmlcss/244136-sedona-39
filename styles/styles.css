@@ -1028,7 +1028,7 @@ body {
   margin-right: 70px;
   border: 2px solid rgb(229, 229, 229);
   border-radius: 4px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
