@@ -101,32 +101,30 @@
               </div>
             </li>
           </ul>
-          <section class="services" data-test="service">
-            <div class="advantage-desc">
-              <h2 class="title">Приезжайте в Седону отдохнуть <br>в комфорте и уюте!</h2>
-              <p class="title-text">Опытный персонал и качественное обслуживание!</p>
-            </div>
-            <ul class="advantage-list list">
-              <li class="advantage-item box">
-                <div class="holder housing">
-                  <h3 class="advantage-subtitle">Жильё</h3>
-                  <p class="advantage-text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
-                </div>
-              </li>
-              <li class="advantage-item eat">
-                <div class="holder food">
-                  <h3 class="advantage-subtitle">Еда</h3>
-                  <p class="advantage-text">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
-                </div>
-              </li>
-              <li class="advantage-item box">
-                <div class="holder souvenirs">
-                  <h3 class="advantage-subtitle">Сувениры</h3>
-                  <p class="advantage-text">Не только китайского,<br>но и настоящего местного производства!</p>
-                </div>
-              </li>
-            </ul>
-          </section>
+          <div class="advantage-desc">
+            <h2 class="title">Приезжайте в Седону отдохнуть <br>в комфорте и уюте!</h2>
+            <p class="title-text">Опытный персонал и качественное обслуживание!</p>
+          </div>
+          <ul class="advantage-list list">
+            <li class="advantage-item box">
+              <div class="holder housing">
+                <h3 class="advantage-subtitle">Жильё</h3>
+                <p class="advantage-text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+              </div>
+            </li>
+            <li class="advantage-item eat">
+              <div class="holder food">
+                <h3 class="advantage-subtitle">Еда</h3>
+                <p class="advantage-text">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
+              </div>
+            </li>
+            <li class="advantage-item box">
+              <div class="holder souvenirs">
+                <h3 class="advantage-subtitle">Сувениры</h3>
+                <p class="advantage-text">Не только китайского,<br>но и настоящего местного производства!</p>
+              </div>
+            </li>
+          </ul>
         </section>
         <article class="hotel-search" data-test="search">
           <h2 class="search-title title">Заинтересовались?</h2>
@@ -193,7 +191,7 @@
     </div>
 
     <!--  модальное окно -->
-    <div class="modal-container modal-container-close">
+    <div class="modal-container" data-test="modal">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -208,8 +206,8 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="arrival-grid">
               <label class="field arrival" for="arrival">Дата Заезда:</label>
-              <input class="arrival-form modal-form" type="text" id="arrival" name="arrival" placeholder="Укажите дату"
-                required>
+              <input class="arrival-form modal-form" type="text" id="arrival" name="arrival"
+                placeholder="Укажите дату" required>
               <strong class="date-error">Мы не можем отправить вас в прошлое.</strong>
             </div>
             <div class="departure-grid">
