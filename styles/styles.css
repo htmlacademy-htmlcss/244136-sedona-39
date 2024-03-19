@@ -875,19 +875,13 @@ body {
   box-sizing: border-box;
 }
 
-/* стили для инпута, находящегося в фокусе */
-.custom-checkbox > input:not(:disabled):focus + span::before,
-.custom-radio > input:not(:disabled):focus + span::before {
-  outline: 3px solid #83b3d3;
-}
-
 /* стили для инпута, находящегося в состоянии checked */
-.custom-checkbox > input:not(:disabled):checked + span::before {
+.custom-checkbox > input:checked + span::before {
   background-color: #ffffff;
   background-image: url("../images/catalog/checkbox.svg");
 }
 
-.custom-radio > input:not(:disabled):checked + span::before {
+.custom-radio > input:checked + span::before {
   background-color: #ffffff;
   background-image: url("../images/catalog/radio.svg");
 }
@@ -900,11 +894,17 @@ body {
   opacity: 60%;
 }
 
+/* стили для инпута, находящегося в фокусе */
+.custom-checkbox > input:not(:disabled):focus + span::before,
+.custom-radio > input:not(:disabled):focus + span::before {
+  outline: 3px solid #83b3d3;
+}
+
 /* стили при нажатии на чекбокс */
 .custom-checkbox > input:not(:disabled):active + span::before,
 .custom-checkbox > input:not(:disabled):active + span:not(:disabled):active,
 .custom-radio > input:not(:disabled):active + span::before,
-.custom-radio > span:not(:disabled):active {
+.custom-radio > input:not(:disabled):active + span:not(:disabled):active{
   opacity: 30%;
 }
 
@@ -1080,6 +1080,7 @@ body {
   background-repeat: no-repeat;
   background-position: calc(100% - 18px);
   background-color: #ffffff;
+  color: #333333;
 }
 
 .select-control:not(:disabled):hover {
@@ -1205,6 +1206,7 @@ body {
 .result-type,
 .price {
   margin: 0;
+  color: #333333;
 }
 
 .price {
@@ -1263,6 +1265,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  color: #333333;
 }
 
 .pagination {
